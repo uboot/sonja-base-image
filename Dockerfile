@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3.15
 
 RUN apk add --no-cache \
 		bash \
@@ -7,9 +7,10 @@ RUN apk add --no-cache \
 		git \
 		py3-pip \
 		py3-wheel \
+		py3-cffi \
 		py3-cryptography \
+		py3-greenlet \
 		py3-mysqlclient \
-		py3-gevent \
 		py3-bcrypt
 
 RUN mkdir -p /usr/src/app
