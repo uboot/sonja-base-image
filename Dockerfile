@@ -11,7 +11,8 @@ RUN apk add --no-cache \
 		py3-cryptography \
 		py3-greenlet \
 		py3-mysqlclient \
-		py3-bcrypt
+		py3-bcrypt \
+		py3-hiredis
 
 RUN mkdir -p /usr/src/app
 
